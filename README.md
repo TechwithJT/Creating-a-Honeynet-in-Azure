@@ -1,20 +1,26 @@
-<h1>JWipe - Disk Sanitization</h1>
+<h1>Azure Honeynet: Cyber threats in Real Time</h1>
 
- ### [YouTube Demonstration](https://youtu.be/7eJexJVCqJo)
 
-<h2>Description</h2>
-Project consists of a simple PowerShell script that walks the user through "zeroing out" (wiping) any drives that are connected to the system. The utility allows you to select the target disk and choose the number of passes that are performed. The PowerShell script will configure a diskpart script file based on the user's selections and then launch Diskpart to perform the disk sanitization.
+
+<h2>Introduction</h2>
+In this project, I simulate a small-scale honeynet that attracts real-world traffic from attackers around the world through Microsoft Azure. The goal throughout this project is to demonstrate best security practices, incident response tactics, and the effects of hardening your environment. We'll accomplish this by intentionally deploying virtual machines that have no safeguard from the public internet to attract attackers into our environment. Then after ingesting some log sources into Log Analytics Workspace, Microsoft Sentinel will come in to create attack maps, alerts, and incidents. In order to showcase metrics before and after hardening the environment based off the incidents generated from the 24 hour capture.
 <br />
 
 
-<h2>Languages and Utilities Used</h2>
+<h2>Azure Components Used</h2>
 
-- <b>PowerShell</b> 
-- <b>Diskpart</b>
+- <b>Azure Virtual Network (VNet)</b> 
+- <b>Azure Network Security Group (NSG)</b>
+- <b>Virtual Machines (2x Windows, 1x Linux)</b>
+- <b>Log Analytics Workspace with Kusto Query Language (KQL) Queries</b>
+- <b>Azure Key Vault</b>
+- <b>Azure Storage Account</b>
+- <b>Microsoft Sentinel</b>
+- <b>Microsoft Defender for Cloud</b>
 
-<h2>Environments Used </h2>
+<h2>Architecture Before Hardening </h2>
 
-- <b>Windows 10</b> (21H2)
+- <b>In the "BEFORE" stage of the project, all resources were initially deployed with the hope that attraction would be gained from the public internet. The Virtual Machines had both their Network Security Groups (NSGs) and built-in firewalls wide open, allowing unrestricted access from any source. Additionally, all other resources, such as storage accounts and databases, were deployed with public endpoints visible to the internet, without utilizing any Private Endpoints for added security. These machines were then left to the public for 24 hours to generate the following attack maps mentioned earler.</b> (21H2)
 
 <h2>Program walk-through:</h2>
 
