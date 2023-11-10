@@ -26,8 +26,8 @@ In this project, I simulate a small-scale honeynet that attracts real-world traf
 
 
 <p align="center">
-Launch the utility: <br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Attack Map: <br/>
+<img src="https://i.imgur.com/PN0ArE4.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 Select the disk:  <br/>
