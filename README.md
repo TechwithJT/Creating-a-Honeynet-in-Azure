@@ -78,8 +78,19 @@ After Hardening:  <br/>
 <img src="https://i.imgur.com/wdAclZG.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+<h2>Utilizing NIST 800.61r2 Computer Incident Handling Guide</h2>
+For each simulated attack I practiced incident responses following NIST SP 800-61 r2.:  <br/>
+<img src="https://i.imgur.com/9HHyJKe.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<b>Each organization will have policies related to an incident response that should be followed. This event is just a walkthrough for possible actions to take in the detection of malware on a workstation.</b> 
+
+<h2>Preperation</h2>
+
+- <b>The Azure lab was set up to ingest all of the logs into Log Analytics Workspace, Sentinel and Defender were configured, and alert rules were put in place.</b>
+
+
+<h2></h2>
+
 </p>
 
 <!--
