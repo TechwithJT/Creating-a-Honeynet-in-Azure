@@ -27,21 +27,40 @@ In this project, I simulate a small-scale honeynet that attracts real-world traf
 
 <p align="center">
 Attack Map: <br/>
+ 
 <img src="https://i.imgur.com/PN0ArE4.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+This attack map highlights the incidents for syslog authentication failures experienced by the Linux server.:  <br/>
+<img src="https://i.imgur.com/N8rio0r.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Enter the number of passes: <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+This attack map showcases RDP and SMB failures against the Window machine: <br/>
+<img src="https://i.imgur.com/izaypM0.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Confirm your selection:  <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+This attack map showcases failures against the MSSQL server.:  <br/>
+<img src="https://i.imgur.com/OD1TipR.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
+<h2>After Hardening Measures and Security Controls</h2>
+<b>In the "AFTER" stage, based off the incidents created from the "Before" 24 hour capture, I implemented hardening measures and security controls to improve the environment's security from attackers.
+These improvements included:</b>
+
+- <b>Network Security Groups (NSGs): I hardened the NSGs by only allowing my own public IP address to come thrugh otherwise all other traffic would be blocked by the new parameteres created.</b>
+- <b>Built-in Firewalls: In my virtual machines I configured the built-in firewalls so that it would deny access from unauthorized users.</b>
+- <b>Private Endpoints: For other Azure resources, I replaced the public endpoints with Private Endpoints. This ensured that access to sensitive resources, such as storage accounts and databases, was limited to only the virtual network.</b> 
+
+<h2>Metrics Before Hardening / Security Controls</h2>
+
+<b>The following table shows the metrics we measured in our insecure environment for 24 hours:</b> 
+
+<b>Start Time 2023-11-10 09:15 AM</b> 
+
+<b>Start Time 2023-11-11 09:30 AM:</b> 
+
+
+
 Wait for process to complete (may take some time):  <br/>
 <img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
