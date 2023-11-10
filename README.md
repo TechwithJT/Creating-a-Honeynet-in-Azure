@@ -65,8 +65,17 @@ Before Stats:  <br/>
 <img src="https://i.imgur.com/s7AtaYj.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+<h2>Metrics After Hardening / Security Controls</h2>
+<b>The following table shows the metrics we measured in our secure environment for 24 hours:</b> 
+
+<b>Start Time 2023-11-13 10:12 AM</b> 
+
+<b>Start Time 2023-11-14 11:35 AM</b> 
+
+
+After Hardening:  <br/>
+<img src="https://i.imgur.com/wdAclZG.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 Observe the wiped disk:  <br/>
